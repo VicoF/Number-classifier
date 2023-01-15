@@ -1,11 +1,13 @@
-from dnn_framework.dataset import Dataset, DatasetLoader
-from dnn_framework.layer import Layer
-from dnn_framework.loss import Loss
-from dnn_framework.metrics import LossMetric, ClassificationAccuracyMetric, \
+from .dataset import Dataset, DatasetLoader
+from .layer import Layer
+from .loss import Loss
+from .metrics import LossMetric, ClassificationAccuracyMetric, \
     LossLearningCurves, LossAccuracyLearningCurves
-from dnn_framework.network import Network
-from dnn_framework.optimizer import Optimizer
-from dnn_framework.student.layers import FullyConnectedLayer, BatchNormalization, Sigmoid, ReLU
-from dnn_framework.student.losses import CrossEntropyLoss, softmax, MeanSquaredErrorLoss
-from dnn_framework.student.optimizers import SgdOptimizer
-from dnn_framework.trainer import Trainer
+from .network import Network
+from .optimizer import Optimizer
+from .layers import FullyConnectedLayer, BatchNormalization, Sigmoid, ReLU
+from .losses import softmax
+from .CrossEntropyLoss import CrossEntropyLoss
+from .MeanSquaredErrorLoss import MeanSquaredErrorLoss
+from .optimizers import SgdOptimizer
+from .trainer import Trainer

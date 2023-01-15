@@ -3,7 +3,7 @@ import time
 
 from tqdm import tqdm
 
-from dnn_framework.dataset import DatasetLoader
+from .dataset import DatasetLoader
 
 
 class Trainer:
