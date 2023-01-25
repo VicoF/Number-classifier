@@ -2,9 +2,9 @@ import os
 
 from tqdm import tqdm
 
-from dnn_framework import Trainer, CrossEntropyLoss, SgdOptimizer, \
+from src.dnn_framework import Trainer, CrossEntropyLoss, SgdOptimizer, \
     LossMetric, ClassificationAccuracyMetric, LossAccuracyLearningCurves
-from mnist.dataset import MnistDataset
+from src.mnist.dataset import MnistDataset
 
 
 class MnistTrainer(Trainer):

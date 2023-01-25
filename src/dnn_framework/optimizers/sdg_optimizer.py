@@ -1,4 +1,4 @@
-from .optimizer import Optimizer
+from src.dnn_framework import Optimizer
 
 
 class SgdOptimizer(Optimizer):
@@ -7,7 +7,8 @@ class SgdOptimizer(Optimizer):
     """
 
     def __init__(self, parameters, learning_rate=0.01):
-        raise NotImplementedError()
+        super().__init__(parameters)
+        self.learning_rate = learning_rate
 
     def _step_parameter(self, parameter, parameter_grad, parameter_name):
-        raise NotImplementedError()
+        return parameter - parameter_grad * self.learning_rate

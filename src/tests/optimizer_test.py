@@ -2,8 +2,8 @@ import unittest
 
 import numpy as np
 
-from dnn_framework import SgdOptimizer
-from tests import DELTA
+from src.dnn_framework import SgdOptimizer
+from src.tests import DELTA
 
 
 class SgdOptimizerTestCase(unittest.TestCase):

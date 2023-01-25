@@ -2,8 +2,8 @@ import unittest
 
 import numpy as np
 
-from src.dnn_framework.CrossEntropyLoss import CrossEntropyLoss
-from src.dnn_framework.MeanSquaredErrorLoss import MeanSquaredErrorLoss
+from src.dnn_framework.losses.cross_entropy_loss import CrossEntropyLoss
+from src.dnn_framework.losses.mean_squared_error_loss import MeanSquaredErrorLoss
 from src.tests import test_loss_input_grad, DELTA
 
 

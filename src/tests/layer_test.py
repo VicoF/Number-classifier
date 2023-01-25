@@ -2,8 +2,8 @@ import unittest
 
 import numpy as np
 
-from dnn_framework import FullyConnectedLayer, BatchNormalization, Sigmoid, ReLU
-from tests import test_layer_input_grad, test_layer_parameter_grad, DELTA
+from src.dnn_framework import  FullyConnectedLayer, BatchNormalization, Sigmoid, ReLU
+from src.tests import test_layer_input_grad, test_layer_parameter_grad, DELTA
 
 
 class LayerTestCase(unittest.TestCase):

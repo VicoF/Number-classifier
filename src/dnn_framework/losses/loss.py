@@ -1,3 +1,6 @@
+import numpy as np
+
+
 class Loss:
     """
     This is the base class of every loss function.

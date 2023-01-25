@@ -63,15 +63,15 @@ class Trainer:
 
     def _train_one_epoch(self):
         self._clear_between_training_epoch()
-
         self._network.train()
         for x, target in tqdm(self._training_dataset_loader):
             y = self._network.forward(x)
             loss, y_grad = self._loss.calculate(y, target)
             parameter_grads = self._network.backward(y_grad)
             self._optimizer.step(parameter_grads)
-
             self._measure_training_metrics(loss, y, target)
+        self._optimizer.learning_rate *= 0.9
+
 
     def _validate(self):
         self._clear_between_validation_epoch()

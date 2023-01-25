@@ -1,1 +1,1 @@
-from mnist.trainer import MnistTrainer
+from src.mnist.trainer import MnistTrainer
